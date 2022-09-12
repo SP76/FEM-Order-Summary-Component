@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --pale-blue-shadow: hsl(225, 65%, 80%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --bright-blue-shadow: hsl(245, 50%, 75%);
+  --bright-blue-hover: hsl(244, 83%, 68%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  background-color: var(--pale-blue);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card {
+  width: 450px;
+  background-color: white;
+  color: var(--desaturated-blue);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 50px auto;
+  box-shadow: 0px 20px 30px -8px var(--pale-blue-shadow);
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.container > * {
+  margin: 13px 0;
+}
+
+.container strong {
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+.title {
+  color: var(--dark-blue);
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.order-description {
+  line-height: 25px;
+}
+
+.plan-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  background-color: var(--very-pale-blue);
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.plan-description {
+  margin-right: 75px;
+  line-height: 20px;
+}
+
+.plan-container a {
+  color: var(--bright-blue);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.plan-container a:hover {
+  color: var(--bright-blue-hover);
+  text-decoration: none;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.proceed-btn {
+  background-color: var(--bright-blue);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 20px 30px -8px var(--bright-blue-shadow);
+}
+
+.proceed-btn:hover {
+  background-color: var(--bright-blue-hover);
+}
+
+.cancel-btn {
+  background-color: white;
+  color: var(--desaturated-blue);
+  border: none;
+  margin-top: 22px;
+}
+
+.cancel-btn:hover {
+  color: black;
+}
